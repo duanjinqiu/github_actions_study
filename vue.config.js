@@ -1,3 +1,4 @@
 module.exports = {
-  lintOnSave: false
+  lintOnSave: false,
+  publicPath: '/github_actions_study/'
 };
