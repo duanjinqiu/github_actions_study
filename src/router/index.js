@@ -7,8 +7,7 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: Home
+    redirect: '/learn'
   },
   {
     path: "/about",
@@ -18,6 +17,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue")
+  },
+  {
+    path: '/learn',
+    name: 'learn',
+    component: () => import(/* webpackChunkName: "learn" */ '../views/learn.vue')
   }
 ];
 

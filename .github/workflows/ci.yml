@@ -13,7 +13,7 @@ jobs:
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@master
       env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: dist
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}  #在github项目的settings/secrets中设置变量
+        BRANCH: gh-pages  #github分支
+        FOLDER: dist    #运行build命令后，生成打包后的文件夹
         BUILD_SCRIPT: npm install && npm run build

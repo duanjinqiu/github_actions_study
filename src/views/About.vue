@@ -10,7 +10,7 @@ export default {
   name: "About",
   data() {
     return {
-      text: "我是好人"
+      text: ""
     };
   },
   created() {}
