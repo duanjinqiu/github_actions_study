@@ -21,7 +21,6 @@ export default {
 
 <style scoped>
 a {
-    text-decoration: none;
     color: rgb(16, 181, 223);
     font-size: 20px;
 }
